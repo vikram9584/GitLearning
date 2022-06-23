@@ -1,0 +1,204 @@
+https://github.com/prasannakasyap/JavaTraining
+
+day04
+______
+Git 
+
+	In this session, we are going to discuss about
+
+		Version Control Systems
+
+		About GIT
+
+		Git WorkFlow Life Cycle
+
+		Creating GIT Repo
+
+		Git Commands
+
+		
+
+1) What is Version Control System 
+
+Version Control sysstem is a systsem that records changes to a file or set of files
+
+There are various version control systems are there as
+
+	-> Local Version Control Systems
+
+	-> Centralized Version Control Systems
+
+	-> Distributed Version Control Systems (GIT)
+
+
+2) Why Vesion Control System : 
+
+	Version Control system provides idea of coding implemented in earlier versions
+
+	Gives you great support for different version of same project 
+
+	Providing concurrent work and implements merge changes 
+
+
+Git : 
+
+Git is a free and open-source distributed version control system designed to handle everything from small to large projects with speed and efficiency. 
+
+Every git working directory contains a full flexged repository with complete history of tracking capabilities.
+
+It is not dependent on neetwork acccess or a central server. 
+
+Goals : 
+
+   Speed
+
+   Support for development
+
+   Fully Distributed
+
+   Able to handle large projects efficiently
+
+
+In Git we have main states or areas known as
+
+   -> Working Directory 
+
+	This is the git repository diretory, where we can store all the information. 
+
+   -> Staging Area : It is a simple file, generally presnent in your git diretory, that stores information 
+		about all the commits. {whatever code you want to push, first to be commited into staging area}
+
+   -> Git Local Directory : This is the local git repository, where the changes get finalized before going to 				git remote. 
+
+   -> Git Remote Directory : This is the directory, where we can get all updated commited code, and all changes 				will be reflected here. 
+
+
+
+https://github.com/Prasannakasyap/JavaTraining
+
+
+After creating repository, open git bash and in that run the below commands
+
+git config --global user.name "prasannakasyap"
+
+git config --global user.email "puiangtraining@gmail.com"
+
+
+First step you need to do is 
+
+Once any client gives git repo, first you need to clone that. 
+
+for that you please run the command as
+
+git clone gitUrl
+
+git clone https://github.com/Prasannakasyap/JavaTraining
+
+How to add a file to the staging area 
+
+git add .
+
+Hot to add the files to local repository 
+
+git commit -m "message"
+
+git commit -m "Git Notes uploaded"
+
+How to push the files to remote repository 
+
+git push origin main
+
+To see the status of the current git repository please give the command as
+
+git status 
+
+To See the difference between committed code and uncommitted code, then you please run the command as
+
+git diff
+
+To see the list of commands executed in github, and see the history of logs, then we need the command as
+
+git log
+
+git log --oneline
+
+
+git commit -a : 
+
+Commits a snapshot of all changes in the working directory. 
+
+Which situation, we need to use git commit -a is, assume you are not created any new files, only you did modifications in the given file, then need to record the changes of existing file, then no need to give 
+git add ., instead of directly you can run the commnad as
+
+git commit -a -m "message"
+
+here -a records the snapshot of given file changes as new files are not created. 
+
+If you give the command 
+
+git status in git working directory, it shows the list of files/content
+which is not added to the staging area 
+
+How to Undo the changes of the given file, 
+as i want to retain the content as old commit only, then 
+
+git checkout filename 
+
+Git Reset allows you to move commits from history back into working or staging area. 
+
+It can also be used to throw the changes away. 
+
+Example :
+
+git add hello.txt
+
+then its added to the staging area. 
+
+Now, if you want to unstage the given files, then 
+
+git reset HEAD hello.txt
+
+Now, whatever staged content will be unstaged automatically. 
+
+Git Branching : 
+________________
+
+Here, we need to take care of merge conflicts and individual code to be idenfied then we need the help of branches.
+
+You can create a branch as 
+
+git branch branch_name
+
+git branch java1
+
+You can redirect to the branch as 
+
+git checkout branch_name 
+
+Or You need to create a branch and move directly into that branch, then 
+
+git checkout -b branch_name 
+
+To refresh the list of branches in git, please run the command as
+
+git remote update
+
+To see list of branches available, then 
+
+git pull 
+
+Used to pull the code from one branch to another branch
+
+To remove any branch 
+
+git branch -D branch_name
+
+
+
+
+
+
+
+
+
+
