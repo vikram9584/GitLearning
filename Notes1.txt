@@ -4,4 +4,14 @@ I  am  learning java Programming
 
  this is git learning programme and it conducted by CGI team member
 
+import java.util.Scanner;
+public class traiangle{
+
+		public static void main(String args [] ){
+		System.out.println("Enter the sides of the triangle");
+		Scanner sc = new Scanner(System.in);
+		int side1 = sc.nextInt();
+	
+}
+}
 
